@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0; margin: 0;
+    }
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// MENU 2 */
+    .menu_2{
+        background-color: white; justify-content: center;color: lightseagreen; 
+    }
+    .title_menu_2{
+        font-size: 40px; justify-content: center; display: flex;margin: 10px;
+    }
+    .title_about_2{
+        justify-content: center; display: flex; margin: 40px; font-family:Sans-serif; color: rgb(70, 70, 70);
+    }
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// MENU 3*/
+    .menu_3{
+        background-color: lightseagreen; margin-top: -40px;
+    }
+    .title_menu_3{
+        font-size: 40px; justify-content: center; display: flex; margin: 30px 0 10px 0;color: white;padding-top: 60px;
+    }
+    .title_menu3{
+        margin-bottom: 30px; font-size: 25px; justify-content: center; display: flex; font-family:Sans-serif; color: rgb(62, 62, 62);color: white;
+    }
+    .menu_3>div{
+        justify-content: center; display: flex;
+    }
+    .titleLink{
+        width: 30vw; display: flex; margin: 40px;
+    }
+    .titleLink>div>i{
+        font-size: 65px; margin-right: 20px; color: rgb(220, 220, 220);margin: 15% 15px;
+    }
+    .titleLink>div>a{
+        color: wheat; font-size: 21px; text-decoration: underline; cursor: pointer;
+    }
+    .titleLink>div>p{
+        color: white;
+    }
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// MENU 4*/
+    .menu_4{
+        height: 100vh; background-color: white; margin-top: -30px;
+    }
+    .menuTitle{
+        font-size: 40px; justify-content: center; display: flex; margin: 30px 0 10px 0;padding-top: 60px;
+    }
+    .menu_4Title{
+        margin-bottom: 30px; font-size: 25px; justify-content: center; display: flex; font-family:Sans-serif; color: rgb(62, 62, 62);
+    }
+    .menu_4>div{
+        justify-content: center; display: flex;
+    }
+    .pic1{
+        width: 40vw; height: 57vh; overflow: hidden;
+    }
+    .pic2{
+        height: 28.5vh; margin: 0 10px;
+    }
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// MENU 5*/
+    .menu_5{
+        background-color: lightseagreen; height: 110vh;
+    }
+    .menu5Title{
+        font-size: 40px; justify-content: center; display: flex;color: white; padding: 5vh;
+    }
+    .menu_5Title{
+        margin-bottom: 30px; font-size: 25px; justify-content: center; display: flex; font-family: 10px; color: white;
+    }
+    .con5Pic{
+        justify-content: center; display: flex;
+    }
+    .con5Pic>div{
+        width: 25vw; height: 40vh; margin: 0 1vw; text-align: center;
+    }
+    .con5Pic>div>img{
+        height: 25vw; height: 40vh;
+    }
+    .con5Pic>div>p{
+        color: wheat; font-size: 22px; justify-content: center; display: flex; text-decoration: underline; cursor: pointer;
+    }
+    .aboutKurs{
+        font-size: 20px; justify-content: center; display: flex; text-decoration: none; font-weight: 400; margin-top: 5vh; color: white;
+    }
+    .aboutKursMoney{
+        font-size: 25px; justify-content: center; display: flex;margin-top: 5vh; color: wheat;
+    }
+    .btnTulash{
+        width: 230px;height: 35px;margin: 30px 10px;font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;background-color: white;color: lightseagreen;border: 2px solid lightseagreen;outline: 2px solid white;border-radius: 10px;transition: all 0.4s;
+    }
+    .btnTulash:hover{
+        color: wheat;background-color: lightseagreen;border: 2px solid white;outline: 2px solid lightseagreen;cursor: pointer;
+    }
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// MENU 6*/
+    .menu_6{
+        background-color: rgba(255, 255, 255, 0.7); height: 80vh; width: 98.9vw; margin-bottom: 10vh;
+    }
+    .menu_6>b{
+        font-size: 40px; justify-content: center; display: flex; padding: 5vh; margin-top: 5vw;
+    }
+    .menu_6>div{
+        font-size: 25px;margin: 0 20vw;text-align: center;
+    }
+    .kursYozilish{
+        width: 300px;height: 65px;margin: 30px 20px;font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;background-color: lightseagreen;color: white;border: 2px solid white;outline: 2px solid lightseagreen;transition: all 0.4s;
+    }
+    .kursYozilish:hover{
+        color: lightseagreen;background-color: white;border: 2px solid lightseagreen;outline: 2px solid white;cursor: pointer;
+    }
+</style>
+<body>
+    <div class="home">
+        <div class="menu">
+            <header>
+                <img src="logo-babm.png" width="200" height="38" alt="">
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="">Bosh Sahifa</a></li>
+                    <li><a href="#" class="kurslar" id="kurslar">Kurslar</a>
+                        <ul class="fanlar" id="fanlar">
+                            <li><a href="">Dasturlash</a></li>
+                            <li><a href="">Dasturlash</a></li>
+                            <li><a href="">Dasturlash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Biz Haqimizda</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section>
+                <h1>Barkamol Avlod</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Nostrum praesentium maiores consectetur, animi doloribus ipsam at incidunt corrupti,
+                    impedit ex quisquam! Ratione pariatur, alias eum rem neque recusandae accusantium. Deserunt.</p>
+                    <button class="btn1">Kursga yozilish</button>
+                    <button class="btn2">Ma'lumot olish</button>
+                </section>
+            </main>
+        </div>
+        
+        <script src="app.js"></script>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Menu 2 -->
+    <div class="menu_2">
+        <p class="title_menu_2">
+            Barkamol Avlod
+        </p>
+        <br><br>
+        <p class="title_about_2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti suscipit doloremque quis reiciendis nesciunt, assumenda nulla. Voluptas corporis dolorem expedita, asperiores reprehenderit deserunt iusto recusandae cupiditate, fuga laborum illum quae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, saepe et nemo modi ullam alias tempore reiciendis officia, cumque mollitia a natus unde cupiditate laborum laboriosam delectus quidem deserunt optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere inventore consequuntur nihil cumque eos iure nesciunt sapiente minus, fuga, voluptatibus laboriosam sunt, pariatur quos architecto vel nulla reprehenderit soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nisi dolores vel aliquam praesentium, quisquam itaque, voluptates placeat sit eveniet perspiciatis culpa et, ipsam illum aspernatur omnis fugiat at odit?
+        </p>
+        <p class="title_about_2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti suscipit doloremque quis reiciendis nesciunt, assumenda nulla. Voluptas corporis dolorem expedita, asperiores reprehenderit deserunt iusto recusandae cupiditate, fuga laborum illum quae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, saepe et nemo modi ullam alias tempore reiciendis officia, cumque mollitia a natus unde cupiditate laborum laboriosam delectus quidem deserunt optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere inventore consequuntur nihil cumque eos iure nesciunt sapiente minus, fuga, voluptatibus laboriosam sunt, pariatur quos architecto vel nulla reprehenderit soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nisi dolores vel aliquam praesentium, quisquam itaque, voluptates placeat sit eveniet perspiciatis culpa et, ipsam illum aspernatur omnis fugiat at odit?
+        </p>
+        <p class="title_about_2" style="padding-bottom: 30px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti suscipit doloremque quis reiciendis nesciunt, assumenda nulla. Voluptas corporis dolorem expedita, asperiores reprehenderit deserunt iusto recusandae cupiditate, fuga laborum illum quae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, saepe et nemo modi ullam alias tempore reiciendis officia, cumque mollitia a natus unde cupiditate laborum laboriosam delectus quidem deserunt optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere inventore consequuntur nihil cumque eos iure nesciunt sapiente minus, fuga, voluptatibus laboriosam sunt, pariatur quos architecto vel nulla reprehenderit soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nisi dolores vel aliquam praesentium, quisquam itaque, voluptates placeat sit eveniet perspiciatis culpa et, ipsam illum aspernatur omnis fugiat at odit?
+        </p>
+    </div>
+    <div class="menu_3">
+        <p class="title_menu_3">Nima uchun bizni tanlashingiz kerak?</p>
+        <br>
+        <p class="title_menu3">Ota-onalar farzandlarini bizning to'garaklarimizga kiritish sabablari</p>
+        <div>
+            <div class="titleLink">
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div>
+                    <a>Jadval va Intizom</a>
+                    <p>Bizning "Barkamol Avlod bolalar maktabi"da biz faqat barcha sifat standartlariga javob beradigan zamonaviy jihozlardan foydalanamiz</p>
+                </div>
+            </div>
+            <div class="titleLink">
+                <div>
+                    <i class="fa-sharp fa-solid fa-money-bill"></i>
+                </div>
+                <div>
+                    <a>Qulay Narxlar</a>
+                    <p>Bizning "Barkamol Avlod bolalar maktabi"da biz faqat barcha sifat standartlariga javob beradigan zamonaviy jihozlardan foydalanamiz</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="titleLink">
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <a>Oson va tez o'rganish</a>
+                    <p>Bizning "Barkamol Avlod bolalar maktabi"da biz faqat barcha sifat standartlariga javob beradigan zamonaviy jihozlardan foydalanamiz</p>
+                </div>
+            </div>
+            <div class="titleLink">
+                <div>
+                    <i class="fas fa-download"></i>
+                </div>
+                <div>
+                    <a>Dastur</a>
+                    <p>Bizning "Barkamol Avlod bolalar maktabi"da biz faqat barcha sifat standartlariga javob beradigan zamonaviy jihozlardan foydalanamiz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_4">
+        <p class="menuTitle">Dars Jarayonlari</p>
+        <p class="menu_4Title">Kurslarimiz nimalardan tashkil topganini ko'rishingizni taklif qilamiz</p>
+        <div>
+            <div class="pic1">
+                <img src="pic1.jpg">
+            </div>
+            <div>
+                <div><img src="pic2.jpg" class="pic2"><img src="pic2.jpg" class="pic2"></div>
+                <div><img src="pic2.jpg" class="pic2"><img src="pic2.jpg" class="pic2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_5">
+        <p class="menu5Title">𝙺𝚞𝚛𝚜 𝚝𝚞𝚛𝚕𝚊𝚛𝚒</p>
+        <p class="menu_5Title">𝚇𝚘𝚑𝚕𝚊𝚐𝚊𝚗 𝚔𝚞𝚛𝚜𝚒𝚗𝚐𝚒𝚣𝚍𝚊𝚗 𝚋𝚒𝚛𝚒𝚗𝚒 𝚝𝚊𝚗𝚕𝚊𝚗𝚐</p>
+        <div class="con5Pic">
+            <div><img src="1.1.jpg"><p>IT texnalogiyalari</p><b class="aboutKurs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illo nobis mollitia ut veniam eum suscipit, doloremque accusamus. Quia iste reprehenderit qui aliquid fugiat molestiae, iusto molestias officia corrupti!</b><b class="aboutKursMoney">100.000 so'm</b><button class="btnTulash">Tanlash</button></div>
+            <div><img src="1.2.jpg"><p>Rus tili, Ingliz tili</p><b class="aboutKurs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sint rem corrupti perferendis esse, quos ducimus, ut ratione nulla dicta placeat illo, delectus repellat cupiditate numquam ipsa magnam deserunt quod?</b><b class="aboutKursMoney">150.000 so'm</b><button class="btnTulash">Tanlash</button></div>
+            <div><img src="1.3.jpg"><p>Boshlang'ich tayyorgarlik</p><b class="aboutKurs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste minus quod non atque quo nemo tempora, optio exercitationem, et nihil. Alias, reprehenderit adipisci. Temporibus eius ipsum inventore? Id, aliquam?</b><b class="aboutKursMoney">200.000 so'm</b><button class="btnTulash">Tanlash</button></div>
+        </div>
+    </div>
+    <div class="menu_6">
+        <b>𝙺𝚞𝚛𝚜𝚐𝚊 𝚢𝚘𝚣𝚒𝚕𝚒𝚜𝚑</b>
+        <div>
+            <p>𝙻𝚘𝚛𝚎𝚖 𝚒𝚙𝚜𝚞𝚖 𝚍𝚘𝚕𝚘𝚛 𝚜𝚒𝚝 𝚊𝚖𝚎𝚝, 𝚌𝚘𝚗𝚜𝚎𝚌𝚝𝚎𝚝𝚞𝚛 𝚊𝚍𝚒𝚙𝚒𝚜𝚒𝚌𝚒𝚗𝚐 𝚎𝚕𝚒𝚝. 𝙲𝚘𝚗𝚜𝚎𝚌𝚝𝚎𝚝𝚞𝚛 𝚗𝚒𝚜𝚒 𝚎𝚜𝚜𝚎 𝚜𝚞𝚜𝚌𝚒𝚙𝚒𝚝 𝚎𝚊𝚚𝚞𝚎 𝚌𝚞𝚙𝚒𝚍𝚒𝚝𝚊𝚝𝚎, 𝚋𝚎𝚊𝚝𝚊𝚎 𝚗𝚎𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚛𝚞𝚗𝚝, 𝚏𝚊𝚌𝚎𝚛𝚎 𝚙𝚕𝚊𝚌𝚎𝚊𝚝 𝚎𝚡𝚙𝚕𝚒𝚌𝚊𝚋𝚘 𝚘𝚏𝚏𝚒𝚌𝚒𝚒𝚜 𝚑𝚒𝚌 𝚒𝚞𝚛𝚎 𝚏𝚞𝚐𝚒𝚊𝚝 𝚗𝚞𝚖𝚚𝚞𝚊𝚖 𝚟𝚒𝚝𝚊𝚎 𝚖𝚘𝚕𝚕𝚒𝚝𝚒𝚊! 𝚁𝚎𝚙𝚛𝚎𝚑𝚎𝚗𝚍𝚎𝚛𝚒𝚝, 𝚒𝚙𝚜𝚊𝚖 𝚟𝚎𝚕𝚒𝚝!</p>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button class="kursYozilish">Kursga yozilish</button>
+            <p style="font-size: 16px; color: rgb(232, 24, 24);">Joylar chegaralangan</p>
+        </div>
+    </div>
+</body>
+</html>
